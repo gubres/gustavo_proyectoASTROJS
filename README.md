@@ -33,7 +33,7 @@ Asegúrate de tener instalado en tu máquina lo siguiente:
 
          cd gustavo_proyectoASTROJS
 
-3.Instala las dependencias del proyecto:
+3. Instala las dependencias del proyecto:
 
          npm install
 
