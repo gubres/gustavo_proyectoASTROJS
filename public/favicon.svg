@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 128 128">
+    <text x="32" y="96" font-family="Arial, sans-serif" font-size="96" font-weight="bold" fill="#000">G</text>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            text { fill: #FFF; }
+        }
+    </style>
+</svg>

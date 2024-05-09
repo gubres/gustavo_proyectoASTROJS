@@ -1,0 +1,158 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Bienvenido">
+  <Header />
+  <main class="mx-auto max-w-7xl px-4 lg:px-8">
+    <section class="text-black text-justify py-3">
+      <article
+        class="flex flex-col md:flex-row items-center justify-center p-6 mx-auto w-full"
+      >
+        <img
+          src="./images/ame-marron-hr.jpg"
+          alt="Logo de announceme"
+          class="w-full md:w-3/5 mb-4 md:mb-0 md:mr-6"
+        />
+        <p class="text-gray-900 text-lg leading-relaxed md:flex-grow">
+          En Announceme ayudamos a autónomos y pymes a potenciar su negocio con
+          soluciones personalizadas de digitalización. Una propuesta de
+          crecimiento basada en SEO, SEM, redes sociales y una red de networking
+          con otros profesionales.
+        </p>
+      </article>
+
+      <article class="mt-8 p-6 mx-auto w-full">
+        <h3 class="text-gray-900 text-xl font-semibold mb-8 text-center">
+          Qué te ofrecemos:
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex items-center space-x-2 mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"
+                ></path>
+              </svg>
+              <strong>Desarrollo web:</strong>
+            </div>
+            <p class="text-gray-900 text-lg leading-relaxed">
+              Programación personalizada de tu presencia online: web
+              corporativa, ecommerce, hosting profesional.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex items-center space-x-2 mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#000000"
+                viewBox="0 0 256 256"
+                ><path
+                  d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                ></path></svg
+              >
+              <strong>Redes sociales:</strong>
+            </div>
+            <p class="text-gray-900 text-lg leading-relaxed">
+              Creamos contenidos de alta calidad destinados a maximizar los
+              resultados de tu estrategia de comunicación online.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex items-center space-x-2 mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#000000"
+                viewBox="0 0 256 256"
+                ><path
+                  d="M168,152a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,152Zm-8-40H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16Zm56-64V216a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V48A16,16,0,0,1,56,32H92.26a47.92,47.92,0,0,1,71.48,0H200A16,16,0,0,1,216,48ZM96,64h64a32,32,0,0,0-64,0ZM200,48H173.25A47.93,47.93,0,0,1,176,64v8a8,8,0,0,1-8,8H88a8,8,0,0,1-8-8V64a47.93,47.93,0,0,1,2.75-16H56V216H200Z"
+                ></path></svg
+              >
+              <strong>Redacción de copy y blogs:</strong>
+            </div>
+            <p class="text-gray-900 text-lg leading-relaxed">
+              Comunicamos la esencia de tu marca y de tu negocio para llegar a
+              tu público objetivo con el mensaje clave.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex items-center space-x-2 mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#000000"
+                viewBox="0 0 256 256"
+                ><path
+                  d="M32,64a8,8,0,0,1,8-8H216a8,8,0,0,1,0,16H40A8,8,0,0,1,32,64Zm8,72h72a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16Zm88,48H40a8,8,0,0,0,0,16h88a8,8,0,0,0,0-16Zm109.66,13.66a8,8,0,0,1-11.32,0L206,177.36A40,40,0,1,1,217.36,166l20.3,20.3A8,8,0,0,1,237.66,197.66ZM184,168a24,24,0,1,0-24-24A24,24,0,0,0,184,168Z"
+                ></path></svg
+              >
+              <strong>SEO:</strong>
+            </div>
+            <p class="text-gray-900 text-lg leading-relaxed">
+              Te ayudamos a mejorar el posicionamiento de tu sitio web en
+              buscadores para que los clientes te encuentren.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex items-center space-x-2 mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#000000"
+                viewBox="0 0 256 256"
+                ><path
+                  d="M224,128a96,96,0,1,1-21.95-61.09,8,8,0,1,1-12.33,10.18A80,80,0,1,0,207.6,136H128a8,8,0,0,1,0-16h88A8,8,0,0,1,224,128Z"
+                ></path></svg
+              >
+              <strong>Google Ads:</strong>
+            </div>
+            <p class="text-gray-900 text-lg leading-relaxed">
+              Desarrollamos campañas altamente efectivas de Google Ads para
+              atraer clientes a tu sitio web de manera constante.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex items-center space-x-2 mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#000000"
+                viewBox="0 0 256 256"
+                ><path
+                  d="M232,112H136V88h8a16,16,0,0,0,16-16V40a16,16,0,0,0-16-16H112A16,16,0,0,0,96,40V72a16,16,0,0,0,16,16h8v24H24a8,8,0,0,0,0,16H56v32H48a16,16,0,0,0-16,16v32a16,16,0,0,0,16,16H80a16,16,0,0,0,16-16V176a16,16,0,0,0-16-16H72V128H184v32h-8a16,16,0,0,0-16,16v32a16,16,0,0,0,16,16h32a16,16,0,0,0,16-16V176a16,16,0,0,0-16-16h-8V128h32a8,8,0,0,0,0-16ZM112,40h32V72H112ZM80,208H48V176H80Zm128,0H176V176h32Z"
+                ></path></svg
+              >
+              <strong>Networking de profesionales:</strong>
+            </div>
+            <p class="text-gray-900 text-lg leading-relaxed">
+              La colaboración entre empresas y socios es parte de nuestra
+              esencia en Announceme. ¡Llegamos más lejos en equipo!
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
