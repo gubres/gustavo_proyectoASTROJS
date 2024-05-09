@@ -26,15 +26,16 @@ Asegúrate de tener instalado en tu máquina lo siguiente:
 ### Instalación
 
 1. Clona este repositorio en tu máquina local:
-   
-        git clone https://github.com/gubres/gustavo_proyectoASTROJS.git
+
+         git clone https://github.com/gubres/gustavo_proyectoASTROJS.git
    
 2. Navega al directorio del proyecto:
 
-       cd gustavo_proyectoASTROJS
+         cd gustavo_proyectoASTROJS
+
 3.Instala las dependencias del proyecto:
 
-    npm install
+         npm install
 
 4. Para iniciar el servidor de desarrollo y ver el proyecto en tu navegador, ejecuta:
 
