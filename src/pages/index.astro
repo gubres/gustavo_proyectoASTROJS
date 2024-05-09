@@ -1,34 +1,35 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Bienvenido">
-  <Header />
-  <main class="mx-auto max-w-7xl px-4 lg:px-8">
-    <section class="text-black text-justify py-3">
-      <article
-        class="flex flex-col md:flex-row items-center justify-center p-6 mx-auto w-full"
-      >
-        <img
-          src="./images/ame-marron-hr.jpg"
-          alt="Logo de announceme"
-          class="w-full md:w-3/5 mb-4 md:mb-0 md:mr-6"
-        />
-        <p class="text-gray-900 text-lg leading-relaxed md:flex-grow">
-          En Announceme ayudamos a autónomos y pymes a potenciar su negocio con
-          soluciones personalizadas de digitalización. Una propuesta de
-          crecimiento basada en SEO, SEM, redes sociales y una red de networking
-          con otros profesionales.
-        </p>
-      </article>
+  <section class="text-black text-justify py-3">
+    <article
+      class="flex flex-col md:flex-row items-center justify-center p-6 mx-auto w-full"
+    >
+      <img
+        src="./images/ame-marron-hr.jpg"
+        alt="Logo de announceme"
+        class="w-full md:w-3/5 mb-4 md:mb-0 md:mr-6"
+      />
+      <p class="text-gray-900 text-lg leading-relaxed md:flex-grow">
+        En Announceme ayudamos a autónomos y pymes a potenciar su negocio con
+        soluciones personalizadas de digitalización. Una propuesta de
+        crecimiento basada en SEO, SEM, redes sociales y una red de networking
+        con otros profesionales.
+      </p>
+    </article>
 
-      <article class="mt-8 p-6 mx-auto w-full">
-        <h3 class="text-gray-900 text-xl font-semibold mb-8 text-center">
-          Qué te ofrecemos:
-        </h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <article class="mt-8 p-6 mx-auto w-full" id="servicios">
+      <h3 class="text-gray-900 text-xl font-semibold mb-8 text-center">
+        Qué te ofrecemos:
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a
+          title="desarrollo web"
+          class="flex-row justify-center text-black cursor-pointer hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-100 scale-90 gap-x-2 opacity-90 hover:opacity-100 text-xl"
+          href="#"
+        >
           <div class="bg-white p-6 rounded-lg shadow-md">
             <div class="flex items-center space-x-2 mb-2">
               <svg
@@ -49,7 +50,13 @@ import Footer from "../components/Footer.astro";
               corporativa, ecommerce, hosting profesional.
             </p>
           </div>
+        </a>
 
+        <a
+          title="redes sociales"
+          class="flex-row justify-center text-black cursor-pointer hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-100 scale-90 gap-x-2 opacity-90 hover:opacity-100 text-xl"
+          href="#"
+        >
           <div class="bg-white p-6 rounded-lg shadow-md">
             <div class="flex items-center space-x-2 mb-2">
               <svg
@@ -69,7 +76,12 @@ import Footer from "../components/Footer.astro";
               resultados de tu estrategia de comunicación online.
             </p>
           </div>
-
+        </a>
+        <a
+          title="redacción de copy y blogs"
+          class="flex-row justify-center text-black cursor-pointer hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-100 scale-90 gap-x-2 opacity-90 hover:opacity-100 text-xl"
+          href="#"
+        >
           <div class="bg-white p-6 rounded-lg shadow-md">
             <div class="flex items-center space-x-2 mb-2">
               <svg
@@ -89,7 +101,12 @@ import Footer from "../components/Footer.astro";
               tu público objetivo con el mensaje clave.
             </p>
           </div>
-
+        </a>
+        <a
+          title="optimización SEO"
+          class="flex-row justify-center text-black cursor-pointer hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-100 scale-90 gap-x-2 opacity-90 hover:opacity-100 text-xl"
+          href="#"
+        >
           <div class="bg-white p-6 rounded-lg shadow-md">
             <div class="flex items-center space-x-2 mb-2">
               <svg
@@ -102,14 +119,20 @@ import Footer from "../components/Footer.astro";
                   d="M32,64a8,8,0,0,1,8-8H216a8,8,0,0,1,0,16H40A8,8,0,0,1,32,64Zm8,72h72a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16Zm88,48H40a8,8,0,0,0,0,16h88a8,8,0,0,0,0-16Zm109.66,13.66a8,8,0,0,1-11.32,0L206,177.36A40,40,0,1,1,217.36,166l20.3,20.3A8,8,0,0,1,237.66,197.66ZM184,168a24,24,0,1,0-24-24A24,24,0,0,0,184,168Z"
                 ></path></svg
               >
-              <strong>SEO:</strong>
+              <strong> Optimización SEO:</strong>
             </div>
             <p class="text-gray-900 text-lg leading-relaxed">
               Te ayudamos a mejorar el posicionamiento de tu sitio web en
               buscadores para que los clientes te encuentren.
             </p>
           </div>
+        </a>
 
+        <a
+          title="optimización SEO"
+          class="flex-row justify-center text-black cursor-pointer hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-100 scale-90 gap-x-2 opacity-90 hover:opacity-100 text-xl"
+          href="#"
+        >
           <div class="bg-white p-6 rounded-lg shadow-md">
             <div class="flex items-center space-x-2 mb-2">
               <svg
@@ -129,7 +152,13 @@ import Footer from "../components/Footer.astro";
               atraer clientes a tu sitio web de manera constante.
             </p>
           </div>
+        </a>
 
+        <a
+          title="optimización SEO"
+          class="flex-row justify-center text-black cursor-pointer hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-100 scale-90 gap-x-2 opacity-90 hover:opacity-100 text-xl"
+          href="#"
+        >
           <div class="bg-white p-6 rounded-lg shadow-md">
             <div class="flex items-center space-x-2 mb-2">
               <svg
@@ -149,10 +178,8 @@ import Footer from "../components/Footer.astro";
               esencia en Announceme. ¡Llegamos más lejos en equipo!
             </p>
           </div>
-        </div>
-      </article>
-    </section>
-  </main>
-
-  <Footer />
+        </a>
+      </div>
+    </article>
+  </section>
 </Layout>
