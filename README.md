@@ -61,5 +61,5 @@ Si deseas contribuir a este proyecto, por favor sigue estos pasos:
     Abre un Pull Request.
 
 ¡Gracias por visitar mi proyecto! Espero que encuentres útil este repositorio mientras aprendo y desarrollo mis habilidades en el front-end con Astro.js.
+![announcemepage](https://github.com/gubres/gustavo_proyectoASTROJS/assets/110687806/2b9b4d28-c19c-4c5d-afd8-1ed020e7730c)
 
-![announce](https://github.com/gubres/gustavo_proyectoASTROJS/assets/110687806/6286e182-408f-4cf2-a997-4254a1e8fe9b)
