@@ -3,15 +3,17 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Bienvenido">
-  <section class="text-black text-justify py-3">
+  <section class="text-black text-justify py-9 my-9">
     <article
       class="flex flex-col md:flex-row items-center justify-center p-6 mx-auto w-full"
     >
-      <img
-        src="./images/ame-marron-hr.jpg"
-        alt="Logo de announceme"
-        class="w-full md:w-3/5 mb-4 md:mb-0 md:mr-6"
-      />
+      <div class="w-full md:w-3/5 mb-4 md:mb-0 md:mr-6 flex-shrink-0">
+        <img
+          src="/images/ame-marron-hr.jpg"
+          alt="Logo de announceme"
+          class="w-full h-auto"
+        />
+      </div>
       <p class="text-gray-900 text-lg leading-relaxed md:flex-grow">
         En Announceme ayudamos a autónomos y pymes a potenciar su negocio con
         soluciones personalizadas de digitalización. Una propuesta de
@@ -28,7 +30,7 @@ import Layout from "../layouts/Layout.astro";
         <a
           title="desarrollo web"
           class="flex-row justify-center text-black cursor-pointer hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-100 scale-90 gap-x-2 opacity-90 hover:opacity-100 text-xl"
-          href="#"
+          href="/servicios/webdesarrollo"
         >
           <div class="bg-white p-6 rounded-lg shadow-md">
             <div class="flex items-center space-x-2 mb-2">
@@ -55,7 +57,7 @@ import Layout from "../layouts/Layout.astro";
         <a
           title="redes sociales"
           class="flex-row justify-center text-black cursor-pointer hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-100 scale-90 gap-x-2 opacity-90 hover:opacity-100 text-xl"
-          href="#"
+          href="/servicios/redessociales"
         >
           <div class="bg-white p-6 rounded-lg shadow-md">
             <div class="flex items-center space-x-2 mb-2">
@@ -80,7 +82,7 @@ import Layout from "../layouts/Layout.astro";
         <a
           title="redacción de copy y blogs"
           class="flex-row justify-center text-black cursor-pointer hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-100 scale-90 gap-x-2 opacity-90 hover:opacity-100 text-xl"
-          href="#"
+          href="/servicios/redaccioncopyblogs"
         >
           <div class="bg-white p-6 rounded-lg shadow-md">
             <div class="flex items-center space-x-2 mb-2">
@@ -103,9 +105,9 @@ import Layout from "../layouts/Layout.astro";
           </div>
         </a>
         <a
-          title="optimización SEO"
+          title="SEO"
           class="flex-row justify-center text-black cursor-pointer hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-100 scale-90 gap-x-2 opacity-90 hover:opacity-100 text-xl"
-          href="#"
+          href="/servicios/seo"
         >
           <div class="bg-white p-6 rounded-lg shadow-md">
             <div class="flex items-center space-x-2 mb-2">
@@ -119,7 +121,7 @@ import Layout from "../layouts/Layout.astro";
                   d="M32,64a8,8,0,0,1,8-8H216a8,8,0,0,1,0,16H40A8,8,0,0,1,32,64Zm8,72h72a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16Zm88,48H40a8,8,0,0,0,0,16h88a8,8,0,0,0,0-16Zm109.66,13.66a8,8,0,0,1-11.32,0L206,177.36A40,40,0,1,1,217.36,166l20.3,20.3A8,8,0,0,1,237.66,197.66ZM184,168a24,24,0,1,0-24-24A24,24,0,0,0,184,168Z"
                 ></path></svg
               >
-              <strong> Optimización SEO:</strong>
+              <strong>SEO:</strong>
             </div>
             <p class="text-gray-900 text-lg leading-relaxed">
               Te ayudamos a mejorar el posicionamiento de tu sitio web en
@@ -129,9 +131,9 @@ import Layout from "../layouts/Layout.astro";
         </a>
 
         <a
-          title="optimización SEO"
+          title="Google Ads"
           class="flex-row justify-center text-black cursor-pointer hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-100 scale-90 gap-x-2 opacity-90 hover:opacity-100 text-xl"
-          href="#"
+          href="/servicios/googleads"
         >
           <div class="bg-white p-6 rounded-lg shadow-md">
             <div class="flex items-center space-x-2 mb-2">
@@ -155,9 +157,9 @@ import Layout from "../layouts/Layout.astro";
         </a>
 
         <a
-          title="optimización SEO"
+          title="Networking de profesionales"
           class="flex-row justify-center text-black cursor-pointer hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-100 scale-90 gap-x-2 opacity-90 hover:opacity-100 text-xl"
-          href="#"
+          href="/servicios/networkingprofesionales"
         >
           <div class="bg-white p-6 rounded-lg shadow-md">
             <div class="flex items-center space-x-2 mb-2">
