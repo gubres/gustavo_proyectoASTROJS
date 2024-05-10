@@ -28,36 +28,37 @@ const { title, description } = Astro.props;
     <Footer />
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const themeToggle = document.getElementById("theme-toggle");
+        const themeToggle = document.getElementById(
+          "theme-toggle"
+        ) as HTMLInputElement | null;
         const htmlElement = document.documentElement;
         const lightIcon = document.getElementById("theme-toggle-light-icon");
         const darkIcon = document.getElementById("theme-toggle-dark-icon");
 
         function updateThemeIcons() {
           if (htmlElement.classList.contains("dark")) {
-            lightIcon.classList.add("hidden");
-            darkIcon.classList.remove("hidden");
+            lightIcon?.classList.add("hidden");
+            darkIcon?.classList.remove("hidden");
           } else {
-            lightIcon.classList.remove("hidden");
-            darkIcon.classList.add("hidden");
+            lightIcon?.classList.remove("hidden");
+            darkIcon?.classList.add("hidden");
           }
         }
 
-        // Check for saved user preference, if any, on load of the website
         if (
           localStorage.getItem("theme") === "dark" ||
           (!("theme" in localStorage) &&
             window.matchMedia("(prefers-color-scheme: dark)").matches)
         ) {
           htmlElement.classList.add("dark");
-          themeToggle.checked = true;
+          if (themeToggle) themeToggle.checked = true;
         } else {
           htmlElement.classList.add("light");
-          themeToggle.checked = false;
+          if (themeToggle) themeToggle.checked = false;
         }
         updateThemeIcons();
 
-        themeToggle.addEventListener("change", function () {
+        themeToggle?.addEventListener("change", function () {
           if (htmlElement.classList.contains("dark")) {
             htmlElement.classList.remove("dark");
             htmlElement.classList.add("light");
